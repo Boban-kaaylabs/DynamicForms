@@ -1,1 +1,1 @@
-export const TAB_CHANGE = 'TAB_CHANGE';
+export const SET_API_PAYLOAD = 'SET_API_PAYLOAD';

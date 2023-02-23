@@ -7,158 +7,103 @@ export const SCREEN = {
 };
 export const ERROR = {type: 'danger'};
 
-export const STORAGEKEY = {
-  user: '_user',
-};
-
 export const COLORS = {
-  primary: '#002e2e',
-  background: 'rgba(255, 255, 255, 0.5)',
-  white: '#FFFFFF',
-  black: '#000000',
-  transparent: 'rgba(255, 255, 255, 0)',
-  transparent_white: 'rgba(255, 255, 255, 0.5)',
-  transparent_black: 'rgba(0, 0, 0, 0.5)',
-  grey: 'grey',
-  success: 'green',
+  primary: 'back',
   failure: 'red',
-  link: 'blue',
+  success: 'green',
+  white: 'white',
 };
 
-export const shadows = {
-  shadowColor: COLORS.primary,
-  shadowOffset: {
-    width: 1.5,
-    height: 3,
+export const metaDataPage1 = {
+  buttonStyle: {
+    backgroundColor: 'yellow',
+    marginBottom: 10,
   },
-  shadowOpacity: 1,
-  shadowRadius: 1,
-  elevation: 9,
+  textStyle: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  data: [
+    {page: 1, name: 'First Page'},
+    {page: 2, name: 'Second Page'},
+  ],
 };
-export const CREATE_FORM_TYPES = [
-  {
-    id: 1,
-    name: 'Textbox',
-  },
-  {
-    id: 2,
-    name: 'Checkbox',
-  },
-  {
-    id: 3,
-    name: 'Radio Button',
-  },
-  {
-    id: 4,
-    name: 'Date Picker',
-  },
-  {
-    id: 5,
-    name: 'Dropdown',
-  },
-];
-export const TRACK_DATA = [
-  {
-    id: 1,
-    name: 'Requested',
-  },
-  {
-    id: 2,
-    name: 'Processing',
-  },
-  {
-    id: 3,
-    name: 'Accepted',
-  },
-];
 
-export const STATUS_DATA = [
+export const metaDataPage2 = [
   {
-    id: 1,
-    name: 'Allocated',
+    type: 'input',
+    properties: {
+      label: 'Name',
+      value: '',
+      placeholder: 'Enter your name',
+      mode: 'outlined',
+      activeOutlineColor: 'green',
+    },
   },
   {
-    id: 2,
-    name: 'Available',
+    type: 'radio',
+    containerStyle: {
+      marginVertical: 5,
+    },
+    title: 'This is radio button title',
+    data: [
+      {id: 1, name: 'first option', selected: true},
+      {id: 2, name: 'second option', selected: false},
+    ],
+    contentWrapperStyle: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    rbStyle: {
+      height: 18,
+      width: 18,
+      borderRadius: 110,
+      borderWidth: 1,
+      borderColor: 'black',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: 5,
+      marginLeft: 0,
+    },
+    selectedStyle: {
+      width: 12,
+      height: 12,
+      borderRadius: 55,
+      backgroundColor: 'black',
+    },
+    textStyle: {
+      fontWeight: 'bold',
+      fontSize: 15,
+    },
   },
   {
-    id: 3,
-    name: 'Unavailable',
+    type: 'table',
+    value: {
+      head: ['Head', 'Head2', 'Head3', 'Head4'],
+      title: ['Title', 'Title2', 'Title3', 'Title4'],
+      body: [
+        ['1', '2', '3', '4'],
+        ['a', 'b', 'c', 'd'],
+        ['1', '2', '3', '78'],
+        ['a', 'b', 'c', 'd'],
+      ],
+    },
+    styles: {
+      container: {padding: 1},
+      head: {backgroundColor: '#f1f8ff'},
+      text: {margin: 5},
+      border: {borderWidth: 1},
+    },
   },
   {
-    id: 4,
-    name: 'Damaged',
-  },
-  {
-    id: 5,
-    name: 'Under Process',
-  },
-];
-
-export const DEFAULT_FORM_OBJECT = {
-  order: '',
-  type: '',
-  name: '',
-  required: false,
-  number: false,
-  options: [],
-  note: '',
-};
-export const DEFAULT_FORM_FIELDS = [
-  {
-    order: '1',
-    type: 'Textbox',
-    name: 'Serial Number',
-    required: true,
-    number: false,
-    options: [],
-    note: 'Unique Id of the device',
-  },
-  {
-    order: '2',
-    type: 'Textbox',
-    name: 'Brand',
-    required: true,
-    number: false,
-    options: [],
-    note: 'Brand name of the device',
-  },
-];
-
-export const ADMINTABS = [
-  {key: 'Home', active: 'home', inActive: 'homeOutlined', focused: true},
-  {key: 'AllUsers', active: 'user', inActive: 'userOutlined', focused: false},
-  {
-    key: 'Requests',
-    active: 'request',
-    inActive: 'requestOutlined',
-    focused: false,
-  },
-  {
-    key: 'Settings',
-    active: 'settings',
-    inActive: 'settingsOutlined',
-    focused: false,
-  },
-];
-export const USERTABS = [
-  {key: 'Home', active: 'home', inActive: 'homeOutlined', focused: true},
-  {
-    key: 'Activities',
-    active: 'bell',
-    inActive: 'bellOutlined',
-    focused: false,
-  },
-  {
-    key: 'Requests',
-    active: 'request',
-    inActive: 'requestOutlined',
-    focused: false,
-  },
-  {
-    key: 'Settings',
-    active: 'settings',
-    inActive: 'settingsOutlined',
-    focused: false,
+    type: 'button',
+    title: 'Click me',
+    styles: {
+      backgroundColor: 'yellow',
+      alignItems: 'center',
+      alignSelf: 'center',
+      padding: 5,
+    },
   },
 ];

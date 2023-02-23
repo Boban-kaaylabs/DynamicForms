@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import {Provider as PaperProvider} from 'react-native-paper';
 import {ToastProvider} from 'react-native-toast-notifications';
 
-import {BackgroundImage, Mytext} from './src/components/custom';
+import {Mytext} from './src/components/custom';
 import {COLORS} from './src/constants';
 import {RootStack} from './src/navigations';
 import Store from './src/Store';

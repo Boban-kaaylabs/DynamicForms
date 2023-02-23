@@ -1,3 +1,3 @@
-import {TabChange} from './General';
+import {SetApiPaylaod} from './General';
 
-export {TabChange};
+export {SetApiPaylaod};

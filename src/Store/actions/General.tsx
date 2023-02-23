@@ -1,7 +1,7 @@
-import {TAB_CHANGE} from '../actionTypes';
+import {SET_API_PAYLOAD} from '../actionTypes';
 
-const TabChange = (payload: number) => ({
-  type: TAB_CHANGE,
+const SetApiPaylaod = (payload: {}) => ({
+  type: SET_API_PAYLOAD,
   payload,
 });
-export {TabChange};
+export {SetApiPaylaod};
